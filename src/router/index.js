@@ -16,7 +16,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Validation.vue')
+    component: () => import('../views/Validation.vue')
   },
   {
     path: '/ValidationBetweenComp',
@@ -24,7 +24,12 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/ValidationBetweenComp.vue')
+    component: () => import('../views/ValidationBetweenComp.vue')
+  },
+  {
+    path: '/ValidationBetweenCompDiffRules',
+    name: 'ValidationBetweenCompDiffRules',
+    component: () => import('../views/ValidationBetweenComp.vue')
   }
 ]
 
